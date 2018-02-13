@@ -1,0 +1,28 @@
+/* colors */
+$black: #000000;
+$white: #ffffff;
+
+
+
+/* font-sizes */
+/* multiplier: 1.25 */
+$tiny: 0.8rem;
+$normal: 1rem;
+$medium: 1.25rem;
+$big: 1.5625rem;
+$bigger: 1.953125rem;
+$biggest: 2.44rem;
+$huge: 3.05rem;
+
+$fs-text: 16px;
+$ff-primary: 'Montserrat', sans-serif;
+
+$carousel-height: 600px;
+$carousel-height-sm: 80vw;
+
+
+
+/** utility-classes **/
+.float-right {
+  float: right !important;
+}
