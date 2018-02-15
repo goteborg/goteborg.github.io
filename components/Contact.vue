@@ -3,7 +3,7 @@
     <h1 class="section__title text-xs-right">Kontakt</h1>
     <div class="mt-5">
       <v-flex xs6 offset-xs0 offset-xs3>
-        <v-form name="contact">
+        <v-form name="contact" netlify>
           <v-text-field
             label="Imię Nazwisko"
             v-model="name"

@@ -31,7 +31,7 @@ export default {
   padding-top: 100px;
   padding-bottom: 100px;
   font-family: $ff-primary;
-  color: $white;
+  color: $black;
   background-color: #c5283d;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff4242' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat;
@@ -46,16 +46,16 @@ export default {
 }
 .packet {
   &--light {
-    background-color: transparentize(#ff4242, 0.2);
+    background-color: transparentize(white, 0.1);
   }
   &--bold {
-    background-color: transparentize(#ff4242, 0.2);
+    background-color: transparentize(white, 0.1);
   }
   h2 {
     color: $white;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #c5283d;
+    background-color: #ff4242;
   }
 }
 </style>

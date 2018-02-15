@@ -17,24 +17,23 @@ li {
   position: relative;
   margin-bottom: 10px;
   margin-top: 10px;
-  color: transparentize($white, 0.3);
-  &:before {
+  color: transparentize($black, 0.3);
+  &:before, &:after {
     content: '';
     position: absolute;
+    background-color: transparentize($black, 0.5);
+  }
+  &:before {
     top: -5px;
     left: -7px;
     width: 2px;
-    background-color: transparentize($black, 0.5);
     height: 12px;
   }
   &:after {
-    content: '';
-    position: absolute;
     top: -5px;
     left: -5px;
     width: 12px;
     height: 2px;
-    background-color: transparentize($black, 0.5);
   }
 }
 
@@ -45,7 +44,7 @@ li {
   margin: 0 auto;
   margin-bottom: 30px;
   border-radius: 2px;
-  background-color: #c5283d;
+  background-color: #ff4242;
   &:before {
     content:'';
     position: absolute;
@@ -55,7 +54,7 @@ li {
     left: -6px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid #c5283d;
+    border-top: 8px solid #ff4242;
     border-radius: 100px;
   }
 }

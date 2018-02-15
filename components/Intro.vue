@@ -57,7 +57,7 @@ export default {
     startCarousel () {
       const nextImage = this.mainImage === this.images.length - 1 ? 0 : this.mainImage + 1
       if (this.isPlaying) {
-        // this.timeout = setTimeout(this.startCarousel, 5000)
+        this.timeout = setTimeout(this.startCarousel, 5000)
         this.showImage(nextImage)
       } else {
         this.stopCarousel()
@@ -69,7 +69,7 @@ export default {
     },
     restartCarousel () {
       this.isPlaying = true
-      // setTimeout(this.startCarousel, 10000)
+      setTimeout(this.startCarousel, 10000)
     }
   },
   created: function () {
