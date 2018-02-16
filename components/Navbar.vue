@@ -29,7 +29,7 @@
       color: $white;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: $phone) {
     display: none;
   }
 }

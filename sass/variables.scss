@@ -1,7 +1,8 @@
 /* colors */
 $black: #000000;
 $white: #ffffff;
-
+$radRed: #ff4242;
+$darkRed: #c5283d;
 
 
 /* font-sizes */
@@ -19,6 +20,13 @@ $ff-primary: 'Montserrat', sans-serif;
 
 $carousel-height: 600px;
 $carousel-height-sm: 80vw;
+
+/** breakpoints **/
+$giant: 1170px;
+$desktop: 992px;
+$tablet: 768px;
+$phone: 480px;
+$smallPhone: 340px;
 
 
 

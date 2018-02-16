@@ -5,6 +5,7 @@
       <v-flex xs6 offset-xs0 offset-xs3>
         <v-form name="contact" netlify>
           <v-text-field
+            name="name"
             label="Imię Nazwisko"
             v-model="name"
             :rules="nameRules"
@@ -14,6 +15,7 @@
             dark
           ></v-text-field>
           <v-text-field
+            name="email"
             label="E-mail"
             v-model="email"
             :rules="emailRules"
@@ -22,7 +24,7 @@
             dark
           ></v-text-field>
           <v-text-field
-            name="input-7-1"
+            name="message"
             label="Wiadomość"
             class="input-group--focused"
             dark

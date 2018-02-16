@@ -1,6 +1,6 @@
 <template>
   <div class="section" id="o-nas">
-    <h1 class="section__title text-xs-right mb-5">Kim Jesteśmy</h1>
+    <h1 class="section__title mb-5">Kim Jesteśmy</h1>
     <v-layout row wrap>
       <v-flex sm12 md6
         v-for="(item, index) in people"
@@ -51,9 +51,12 @@ export default {
   &__title {
     padding-right: 100px;
     font-size: $biggest;
-  }
-  @media (max-width: 480px) {
-    margin-top: 0;
+    color: transparentize($white, 0.1);
+    text-align: right;
+    @media (max-width: $phone) {
+      text-align: center;
+      padding-right: 0;
+    }
   }
 }
 .about {

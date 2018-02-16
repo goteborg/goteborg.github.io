@@ -44,7 +44,7 @@ li {
   margin: 0 auto;
   margin-bottom: 30px;
   border-radius: 2px;
-  background-color: #ff4242;
+  background-color: $radRed;
   &:before {
     content:'';
     position: absolute;
@@ -54,7 +54,7 @@ li {
     left: -6px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid #ff4242;
+    border-top: 8px solid $radRed;
     border-radius: 100px;
   }
 }

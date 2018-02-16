@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-4">
     <ul v-for="(step, index) in bold" :key="index">
       <li>
         <div>

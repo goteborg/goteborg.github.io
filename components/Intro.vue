@@ -94,10 +94,10 @@ export default {
       font-weight: 300;
       font-family: 'Poiret One', cursive;
       text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
-      @media (max-width: 900px) {
+      @media (max-width: $desktop) {
         font-size: 78px;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $phone) {
         font-size: 56px;
       }
     }
@@ -106,10 +106,10 @@ export default {
       font-weight: 300;
       font-family: 'Montserrat', sans-serif;
       text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
-      @media (max-width: 900px) {
+      @media (max-width: $desktop) {
         font-size: 78px;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $phone) {
         font-size: 56px;
       }
     }
@@ -119,7 +119,7 @@ export default {
   height: $carousel-height;
   position: relative;
   right: 0;
-  @media (max-width: 900px) {
+  @media (max-width: $desktop) {
     height: $carousel-height-sm;
   }
   &__main-image {
@@ -128,7 +128,7 @@ export default {
     width: 900px;
     height: $carousel-height;
     background-size: cover;
-    @media (max-width: 900px) {
+    @media (max-width: $desktop) {
       height: $carousel-height-sm;
       width: 100%;
     }
