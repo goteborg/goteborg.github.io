@@ -1,0 +1,21 @@
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: $ff-primary;
+  color: $white;
+  background-color: $black;
+  background-repeat: repeat;
+  @media (max-width: $phone) {
+    padding-top: 50px;
+  }
+  &__title {
+    padding-right: 100px;
+    font-size: $biggest;
+    color: transparentize($white, 0.1);
+    text-align: right;
+    @media (max-width: $phone) {
+      text-align: center;
+      padding-right: 0;
+    }
+  }
+}

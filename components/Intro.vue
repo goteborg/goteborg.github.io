@@ -104,7 +104,7 @@ export default {
     h2 {
       font-size: 112px;
       font-weight: 300;
-      font-family: 'Montserrat', sans-serif;
+      font-family: $ff-primary;
       text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
       @media (max-width: $desktop) {
         font-size: 78px;
