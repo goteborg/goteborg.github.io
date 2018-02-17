@@ -1,6 +1,6 @@
 <template>
   <div class="section" id="jak-pracujemy">
-    <h1 class="section__title mb-5">Jak Pracujemy</h1>
+    <h1 class="section__title">Jak Pracujemy</h1>
     <v-layout row wrap class="section__description">
       <v-flex xs12 md6 mb-4 class="packet packet--light">
         <h2 class="display-1 text-xs-center">Pakiet Light</h2>
@@ -35,10 +35,14 @@ export default {
   background-color: $darkRed;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff4242' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat;
+  @media (max-width: $phone) {
+    padding-top: 50px;
+  }
   &__title {
     padding-left: 100px;
     font-size: $biggest;
     color: transparentize($white, 0.1);
+    margin-bottom: 50px;
     @media (max-width: $phone) {
       padding-left: 0;
       text-align: center;
