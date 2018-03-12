@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue'
 import Intro from '~/components/Intro.vue'
 import About from '~/components/About.vue'
 import Collab from '~/components/Collab.vue'
@@ -18,7 +17,6 @@ import Contact from '~/components/Contact.vue'
 
 export default {
   components: {
-    Navbar,
     Intro,
     About,
     Collab,
@@ -36,5 +34,7 @@ body {
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-repeat: repeat;
+  background-image: url("~/assets/concrete-texture.png");
 }
 </style>

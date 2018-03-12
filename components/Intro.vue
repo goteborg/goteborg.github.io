@@ -1,9 +1,5 @@
 <template>
   <div class="intro">
-    <div class="title">
-      <h1>GOTEBORG</h1>
-      <h2>STUDIO</h2>
-    </div>
     <div class="gs-carousel">
       <transition name="fade">
         <div
@@ -115,6 +111,7 @@ export default {
     }
   }
 }
+
 .gs-carousel {
   height: $carousel-height;
   position: relative;
