@@ -8,10 +8,34 @@
           name="contact"
           data-netlify="true"
         >
-          <label>Name</label>
-          <input type="text" v-model="name"/>
-          <label>Email</label>
-          <input type="text" v-model="email"/>
+          <div>
+          <v-text-field
+            name="name"
+            label="Imię Nazwisko"
+            v-model="name"
+            :rules="nameRules"
+            :counter="100"
+            class="input-group--focused"
+            dark
+          ></v-text-field>
+          <v-text-field
+            name="email"
+            label="E-mail"
+            v-model="email"
+            :rules="emailRules"
+            class="input-group--focused"
+            required
+            dark
+          ></v-text-field>
+          <v-text-field
+            name="message"
+            label="Wiadomość"
+            v-model="message"
+            class="input-group--focused"
+            dark
+            multi-line
+          ></v-text-field>
+          </div>
           <v-btn
             class="right"
             color="primary"
