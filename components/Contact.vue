@@ -15,8 +15,6 @@
             :rules="nameRules"
             :counter="100"
             class="input-group--focused"
-            placeholder="Imię Nazwisko"
-            required
             dark
           ></v-text-field>
           <v-text-field
