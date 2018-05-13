@@ -3,22 +3,31 @@
     <h1 class="section__title">Kontakt</h1>
     <div class="mt-5">
       <v-flex class="contact-form-wrapper">
-        <v-form
+        <form
+          class="form"
           ref="form"
           name="contact"
           data-netlify="true"
         >
-          <div>
-          <v-text-field
-            name="name"
-            label="Imię Nazwisko"
+          <input
+            type="text"
+            placeholder="Imię Nazwisko"
             v-model="name"
-            :rules="nameRules"
-            :counter="100"
-            class="input-group--focused"
-            dark
-          ></v-text-field>
-          <v-text-field
+            class="form__input"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            v-model="email"
+            class="form__input"
+          />
+          <textarea
+            placeholder="Wiadomość"
+            rows="10"
+            v-model="message"
+            class="form__input form__input--textarea"
+          />
+         <!-- <v-text-field
             name="email"
             label="E-mail"
             v-model="email"
@@ -34,8 +43,7 @@
             class="input-group--focused"
             dark
             multi-line
-          ></v-text-field>
-          </div>
+          ></v-text-field> -->
           <v-btn
             class="right"
             color="primary"
@@ -43,7 +51,7 @@
           >
             Wyslij
           </v-btn>
-        </v-form>
+        </form>
       </v-flex>
     </div>
   </div>
@@ -61,22 +69,18 @@ export default {
     return {
       valid: true,
       name: '',
-      nameRules: [
-        (v) => !!v || 'Name is required',
-        (v) => v.length <= 100 || 'Name must be less than 100 characters'
-      ],
+      nameRule: (v) => !!v,
       email: '',
-      emailRules: [
-        (v) => !!v || 'E-mail is required',
-        (v) => /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-      ],
+      emailRule: (v) => !!v,
       message: ''
     }
   },
   methods: {
     submit (e) {
       console.log('submitting form...')
+
       if (this.$refs.form.validate()) {
+        console.log(this.name, this.email, this.message)
         this.$axios.post('/', {
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({
@@ -104,5 +108,26 @@ export default {
   padding: 0 50px;
   max-width: 700px;
   margin: 0 auto;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    display: flex;
+    flex: 1;
+    height: 30px;
+    margin: 0;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid $white;
+    margin-bottom: 30px;
+    outline: none;
+    &--textarea {
+      height: auto;
+    }
+  }
 }
 </style>
