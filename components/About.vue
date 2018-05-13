@@ -66,6 +66,11 @@ export default {
     margin: 0 auto;
     background-size: cover;
     margin-bottom: 20px;
+    background-position: top center;
+    @media (max-width: $tablet) {
+      width: 300px;
+      height: 500px;
+    }
   }
   &__name {
     text-transform: uppercase;

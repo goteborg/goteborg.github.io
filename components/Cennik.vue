@@ -23,12 +23,11 @@
           <h2 class="rooftop">Shopping z projektantką</h2>
           <br />
           <span>
-            Cena za każdą rozpoczętą godzinę
-            wspólne zakupy klienta z projektantem materiałów wykończeniowych, mebli oraz akcesoriów
+            Zakupy materiałów wykończeniowych, mebli oraz akcesoriów z naszym projektantem.
           </span>
         </v-flex>
         <v-flex xs4 class="cennik-col cennik-col--second">
-          <h2>100 zł</h2>
+          <h2>100 zł<sup>**</sup></h2>
         </v-flex>
       </v-layout>
       <v-layout row wrap class="cennik-row">
@@ -36,12 +35,60 @@
           <h2 class="rooftop">Porada projektanta</h2>
           <br />
           <span>
-            Genialne pomysły w trudnych sytuacjach. Po spotkaniu otrzymujecie Państwo brief spotkania, w
-            którym wypisane są wszystkie kluczowe punkty spotkania.
+            Genialne pomysły w trudnych sytuacjach. Po spotkaniu otrzymujecie Państwo brief, w którym wypisane są wszystkie kluczowe punkty.
           </span>
         </v-flex>
         <v-flex xs4 class="cennik-col cennik-col--second">
-          <h2>100 zł/godz.</h2>
+          <h2>100 zł<sup>**</sup></h2>
+        </v-flex>
+      </v-layout>
+      <v-layout row wrap class="cennik-row">
+        <v-flex xs8 class="cennik-col cennik-col--first">
+          <h2 class="rooftop">Szybkie metamorfozy</h2>
+          <br />
+          <span>
+            Chcesz pomalować,  zostawić część mebli lub po prostu pragniesz metamorfozy bez totalnej demolki? To opcja dla Ciebie.Małym nakładem finansowym zrobimy z istniejących wnętrz istne perełki!
+          </span>
+        </v-flex>
+        <v-flex xs4 class="cennik-col cennik-col--second">
+          <h2>*</h2>
+        </v-flex>
+      </v-layout>
+      <v-layout row wrap class="cennik-row">
+        <v-flex xs8 class="cennik-col cennik-col--first">
+          <h2 class="rooftop">Kompleksowe wykańczanie wnętrz dla deweloperów</h2>
+          <br />
+          <span>
+            Nasz projekt, nadzór oraz opcjonalnie nasza ekipa budowlana.
+          </span>
+        </v-flex>
+        <v-flex xs4 class="cennik-col cennik-col--second">
+          <h2>*</h2>
+        </v-flex>
+      </v-layout>
+      <v-layout row wrap class="cennik-row">
+        <v-flex xs8 class="cennik-col cennik-col--first">
+          <h2 class="rooftop">Projekty biurowców</h2>
+          <br />
+          <span>
+            Projekty biur oraz przestrzeni publicznej dopasowane do potrzeb klienta, zorientowane na ergonomię i budżet.
+          </span>
+        </v-flex>
+        <v-flex xs4 class="cennik-col cennik-col--second">
+          <h2>*</h2>
+        </v-flex>
+      </v-layout>
+      <v-layout row wrap class="cennik-row">
+        <v-flex xs8 class="cennik-col cennik-col--first">
+          <h2 class="rooftop">Architekt online</h2>
+          <br />
+          <span>
+            Nie masz czasu na spotkanie z projektantem? To opcja dla Ciebie. Możemy spotkać się online.
+            Po spotkaniu online otrzymujecie Państwo brief, w którym wypisane są wszystkie kluczowe punkty.
+          </span>
+        </v-flex>
+        <v-flex xs4 class="cennik-col cennik-col--second">
+          <h2>100 zł<sup>**</sup></h2>
         </v-flex>
       </v-layout>
       <v-layout row wrap class="cennik-row">
@@ -53,55 +100,13 @@
           </span>
         </v-flex>
         <v-flex xs4 class="cennik-col cennik-col--second">
-          <h2></h2>
+          <h2>*</h2>
         </v-flex>
       </v-layout>
-      <v-layout row wrap class="cennik-row">
-        <v-flex xs8 class="cennik-col cennik-col--first">
-          <h2 class="rooftop">Szybkie metamorfozy</h2>
-          <br />
-          <span>
-            ---
-          </span>
-        </v-flex>
-        <v-flex xs4 class="cennik-col cennik-col--second">
-          <h2></h2>
-        </v-flex>
-      </v-layout>
-      <v-layout row wrap class="cennik-row">
-        <v-flex xs8 class="cennik-col cennik-col--first">
-          <h2 class="rooftop">Kompleksowe wykańczanie wnętrz dla deweloperów</h2>
-          <br />
-          <span>
-            ---
-          </span>
-        </v-flex>
-        <v-flex xs4 class="cennik-col cennik-col--second">
-          <h2></h2>
-        </v-flex>
-      </v-layout>
-      <v-layout row wrap class="cennik-row">
-        <v-flex xs8 class="cennik-col cennik-col--first">
-          <h2 class="rooftop">Projekty biurowców</h2>
-          <br />
-          <span>
-            ---
-          </span>
-        </v-flex>
-        <v-flex xs4 class="cennik-col cennik-col--second">
-          <h2></h2>
-        </v-flex>
-      </v-layout>
-      <v-layout row wrap class="cennik-row">
-        <v-flex xs8 class="cennik-col cennik-col--first">
-          <h2 class="rooftop">Architekt online</h2>
-          <br />
-          <span>
-            Cena za każdą rozpoczętą godzinę
-          </span>
-        </v-flex>
-        <v-flex xs4 class="cennik-col cennik-col--second">
-          <h2>100 zł</h2>
+      <v-layout>
+        <v-flex class="cennik-col--legend">
+          <span>wycena indywidualna&nbsp;&nbsp; *</span><br/>
+          <span>cena za każdą rozpoczętą godzinę **</span>
         </v-flex>
       </v-layout>
     </div>
@@ -192,6 +197,10 @@
     @media (max-width: $tablet) {
       padding-left: 10px;
     }
+  }
+  &--legend {
+    text-align: right;
+    margin-top: 20px;
   }
 }
 </style>
