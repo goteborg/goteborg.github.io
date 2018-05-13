@@ -8,7 +8,7 @@
         class="pa-5">
         <div
           class="about__image"
-          :style="{ 'background-image': 'url(' + item.image + ')' }"
+          :class="[`${ item.className}`]"
         ></div>
         <h3 class="display-1 text-xs-center mb-3 about__name">{{item.name}}</h3>
         <blockquote>
@@ -27,12 +27,12 @@ export default {
         {
           name: 'Marta Marcinek',
           description: 'Niepoprawna marzycielka, która zamienia pomysł w czyn. Absolwentka wzornictwa przemysłowego. Kocha podróże i właśnie z nich czerpie inspiracje do swoich projektów. Zawsze uśmiechnięta i naładowana pozytywną energią. W projektowaniu ceni prostotę formy i oryginalność. Wizjonerka, która kocha nowe technologie. Na każdy problem znajdzie rozwiązanie. Dla niej nie ma rzeczy niemożliwych. Jej nieodzownym towarzyszem jest komputer, myszka i rysownik.',
-          image: 'https://dummyimage.com/100x100/ffc0cb'
+          className: 'MartaMarcinek'
         },
         {
           name: 'Agata Patel',
           description: 'Trzy razy “P”: PUNKTUALNA, PRECYZYJNA, PERFEKCYJNA. Znamy się 10 lat, a jej projekty wciąż mnie zaskakują. Agata, każde marzenie o pięknym i funkcjonalnym domu zamienia w rzeczywistość. Techniczne spojrzenie oraz artystyczna dusza to jej klucz do sukcesu. Jest świetną projektantką, mamą i żoną ;)',
-          image: 'https://dummyimage.com/100x100/ffc0cb'
+          className: 'AgataPatel'
         }
       ]
     }
@@ -61,8 +61,8 @@ export default {
     width: 100%;
   }
   &__image {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     margin: 0 auto;
     background-size: cover;
     margin-bottom: 20px;
@@ -77,6 +77,12 @@ export default {
     text-align: center;
     margin: 0 auto;
     font-family: $ff-primary;
+  }
+  .AgataPatel {
+    background-image: url("~/assets/Agata-Patel.jpg");
+  }
+  .MartaMarcinek {
+    background-image: url("~/assets/Marta-Marcinek.jpg");
   }
 }
 blockquote {
