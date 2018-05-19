@@ -70,6 +70,9 @@ export default {
       font-family: 'Poiret One', cursive;
       font-weight: bold;
     }
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
   @media (max-width: $phone) {
     display: none;

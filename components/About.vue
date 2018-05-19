@@ -5,12 +5,12 @@
       <v-flex md12
         v-for="(item, index) in people"
         :key="index"
-        class="pa-5">
+        class="about__wrapper">
         <div
           class="about__image"
           :class="[`${ item.className}`]"
         ></div>
-        <h3 class="display-1 text-xs-center mb-3 about__name">{{item.name}}</h3>
+        <h3 class="text-xs-center mb-3 about__name">{{item.name}}</h3>
         <blockquote>
           <p class="about__text">{{item.description}}</p>
         </blockquote>
@@ -51,6 +51,7 @@ export default {
     @media (max-width: $phone) {
       text-align: center;
       padding-right: 0;
+      padding-left: 0;
     }
   }
 }
@@ -59,6 +60,12 @@ export default {
   margin: 0 auto;
   @media (max-width: $tablet) {
     width: 100%;
+  }
+  &__wrapper {
+    padding: 48px;
+    @media (max-width: $phone) {
+      padding: 40px 0 0 0;
+    }
   }
   &__image {
     width: 500px;
@@ -71,10 +78,19 @@ export default {
       width: 300px;
       height: 500px;
     }
+    @media (max-width: $phone) {
+      width: 100%;
+      height: 300px;
+      background-position: center 12%;
+    }
   }
   &__name {
     text-transform: uppercase;
     color: transparentize($white, 0.1);
+    font-size: $bigger;
+    @media (max-width: $phone) {
+      font-size: $big;
+    }
   }
   &__text {
     line-height: 1.5;
@@ -85,9 +101,15 @@ export default {
   }
   .AgataPatel {
     background-image: url("~/assets/Agata-Patel.jpg");
+    @media (max-width: $phone) {
+      background-position: center 18%;
+    }
   }
   .MartaMarcinek {
     background-image: url("~/assets/Marta-Marcinek.jpg");
+    @media (max-width: $phone) {
+      background-position: center 6%;
+    }
   }
 }
 blockquote {
@@ -112,6 +134,12 @@ blockquote {
     content: close-quote;
     bottom: -1.1em;
     right: 0;
+    @media (max-width: $phone) {
+      bottom: -1.3em;
+    }
+  }
+  @media (max-width: $phone) {
+    margin: 40px;
   }
 }
 </style>

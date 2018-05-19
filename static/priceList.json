@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Pakiet Light",
+    "description": "",
+    "price": "*",
+    "hourly": false
+  },
+  {
+    "title": "Pakiet Bold",
+    "description": "",
+    "price": "*",
+    "hourly": false
+  },
+  {
+    "title": "Shopping z projektantką",
+    "description": "Zakupy materiałów wykończeniowych, mebli oraz akcesoriów z naszym projektantem.",
+    "price": "100 zł",
+    "hourly": true
+  },
+  {
+    "title": "Porada projektanta",
+    "description": "Genialne pomysły w trudnych sytuacjach. Po spotkaniu otrzymujecie Państwo brief, w którym wypisane są wszystkie kluczowe punkty.",
+    "price": "100 zł",
+    "hourly": true
+  },
+  {
+    "title": "Szybkie metamorfozy",
+    "description": "Chcesz pomalować,  zostawić część mebli lub po prostu pragniesz metamorfozy bez totalnej demolki? To opcja dla Ciebie.Małym nakładem finansowym zrobimy z istniejących wnętrz istne perełki!",
+    "price": "*",
+    "hourly": false
+  },
+  {
+    "title": "Kompleksowe wykańczanie wnętrz dla deweloperów",
+    "description": "Nasz projekt, nadzór oraz opcjonalnie nasza ekipa budowlana.",
+    "price": "*",
+    "hourly": false
+  },
+  {
+    "title": "Projekty biurowców",
+    "description": "Projekty biur oraz przestrzeni publicznej dopasowane do potrzeb klienta, zorientowane na ergonomię i budżet.",
+    "price": "*",
+    "hourly": false
+  },
+  {
+    "title": "Projekt próbny",
+    "description": "Układ funkcjonalny w dwóch czarno-białych wersjach",
+    "price": "299 zł",
+    "hourly": false
+  },
+  {
+    "title": "Architekt online",
+    "description": "Nie masz czasu na spotkanie z projektantem? To opcja dla Ciebie. Możemy spotkać się online. Po spotkaniu online otrzymujecie Państwo brief, w którym wypisane są wszystkie kluczowe punkty.",
+    "price": "100 zł",
+    "hourly": true
+  },
+  {
+    "title": "Sprzedaż",
+    "description": "Oferujemy sprzedaż sprzętu AGD, lamp, mebli oraz akcesoriów.",
+    "price": "*",
+    "hourly": false
+  }
+]

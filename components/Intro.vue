@@ -19,6 +19,10 @@
         </div>
       </div>
     </div>
+    <div class="title">
+      <h1>GOTEBORG</h1>
+      <h2>STUDIO</h2>
+    </div>
   </div>
 </template>
 
@@ -30,15 +34,9 @@ export default {
       isPlaying: true,
       mainImage: 0,
       images: [
-        {
-          className: 'first'
-        },
-        {
-          className: 'second'
-        },
-        {
-          className: 'third'
-        }
+        { className: 'first' },
+        { className: 'second' },
+        { className: 'third' }
       ]
     }
   },
@@ -69,7 +67,7 @@ export default {
     }
   },
   created: function () {
-    this.startCarousel()
+    // this.startCarousel()
   }
 }
 </script>
@@ -79,34 +77,43 @@ export default {
 .intro {
   width: 100%;
   position: relative;
+  @media (max-width: $tablet) {
+    margin-top: 50px;
+  }
   .title {
+    display: none;
     position: absolute;
     top: 20%;
-    font-size: 4rem;
-    z-index: 1;
-    color: $black;
+    transition: all 250ms ease;
+    @media (max-width: $tablet) {
+      top: -30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
     h1 {
       font-size: 112px;
       font-weight: 300;
       font-family: 'Poiret One', cursive;
-      text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
       @media (max-width: $desktop) {
         font-size: 78px;
       }
-      @media (max-width: $phone) {
-        font-size: 56px;
+      @media (max-width: $tablet) {
+        font-size: 36px;
+        font-weight: bold;
       }
     }
     h2 {
       font-size: 112px;
       font-weight: 300;
       font-family: $ff-primary;
-      text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+      text-align: right;
       @media (max-width: $desktop) {
         font-size: 78px;
       }
-      @media (max-width: $phone) {
-        font-size: 56px;
+      @media (max-width: $tablet) {
+        font-size: 36px;
+        font-weight: bold;
       }
     }
   }
@@ -116,7 +123,11 @@ export default {
   height: $carousel-height;
   position: relative;
   right: 0;
+  transition: all 250ms ease;
   @media (max-width: $desktop) {
+    height: 500px;
+  }
+  @media (max-width: $tablet) {
     height: $carousel-height-sm;
   }
   &__main-image {
@@ -125,6 +136,18 @@ export default {
     width: 900px;
     height: $carousel-height;
     background-size: cover;
+    transition: all 250ms ease;
+    @media (max-width: $giant) {
+      right: 50px;
+    }
+    @media (max-width: $desktop) {
+      height: 500px;
+      width: 100%;
+      right: auto;
+    }
+    @media (max-width: $tablet) {
+      height: $carousel-height-sm;
+    }
     &--first {
       background-image: url("~/assets/kuchnia_czarna.jpg");
     }
@@ -134,17 +157,25 @@ export default {
     &--third {
       background-image: url("~/assets/kuchnia_industrialna.jpg");
     }
-    @media (max-width: $desktop) {
-      height: $carousel-height-sm;
-      width: 100%;
-    }
   }
   &__other-images {
     position: absolute;
     line-height: 0;
     bottom: 10px;
-    right: 0;
+    right: 20px;
     width: 40px;
+    transition: all 250ms ease;
+    @media (max-width: $giant) {
+      right: 50px;
+    }
+    @media (max-width: $desktop) {
+      width: 100%;
+      bottom: -50px;
+      right: auto;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
   }
 }
 .other-image-container {
@@ -152,6 +183,9 @@ export default {
   width: 100px;
   margin: 2px 0;
   overflow: hidden;
+  @media (max-width: $desktop) {
+    margin-left: 5px;
+  }
 }
 .other-image {
   height: 100%;
