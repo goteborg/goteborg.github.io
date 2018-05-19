@@ -33,7 +33,7 @@ export default {
         {
           link: 'cennik',
           text: 'Cennik',
-          anchor: false
+          anchor: true
         },
         {
           link: 'kontakt',

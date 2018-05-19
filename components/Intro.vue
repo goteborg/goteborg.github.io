@@ -4,7 +4,7 @@
       <transition name="fade">
         <div
           class="gs-carousel__main-image"
-          :style="{ 'background-image': 'url(' + images[mainImage].link + ')' }"
+          :class="[`gs-carousel__main-image--${ images[mainImage].className}`]"
           :key="mainImage"
         >
         </div>
@@ -12,9 +12,9 @@
       <div class="gs-carousel__other-images">
         <div class="other-image-container" v-for="(item, index) in images" :key="index">
           <div
-            :style="{ 'background-image': 'url(' + item.link + ')' }"
             @click="onImageClicked(index)"
             class="other-image"
+            :class="[`${ item.className}`]"
           ></div>
         </div>
       </div>
@@ -31,13 +31,13 @@ export default {
       mainImage: 0,
       images: [
         {
-          link: 'http://www.shalinimisra.com/wp-content/uploads/2016/12/Shalini_Misra_Interior_Designer_London.jpg'
+          className: 'first'
         },
         {
-          link: 'http://momentumauctions.com/wp-content/uploads/2017/09/Kiev_Apt_MARTIN_architects_1.0.jpg'
+          className: 'second'
         },
         {
-          link: 'https://s-media-cache-ak0.pinimg.com/originals/c2/44/3b/c2443b74dd8be20fd8d34d97d64bbda8.jpg'
+          className: 'third'
         }
       ]
     }
@@ -125,6 +125,15 @@ export default {
     width: 900px;
     height: $carousel-height;
     background-size: cover;
+    &--first {
+      background-image: url("~/assets/kuchnia_czarna.jpg");
+    }
+    &--second {
+      background-image: url("~/assets/kuchnia_biala.jpg");
+    }
+    &--third {
+      background-image: url("~/assets/kuchnia_industrialna.jpg");
+    }
     @media (max-width: $desktop) {
       height: $carousel-height-sm;
       width: 100%;
@@ -139,8 +148,8 @@ export default {
   }
 }
 .other-image-container {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 100px;
   margin: 2px 0;
   overflow: hidden;
 }
@@ -168,6 +177,16 @@ export default {
 .fade-leave-to {
   transform: translate(-20%);
   opacity: 0;
+}
+
+.first {
+  background-image: url("~/assets/kuchnia_czarna.jpg");
+}
+.second {
+  background-image: url("~/assets/kuchnia_biala.jpg");
+}
+.third {
+  background-image: url("~/assets/kuchnia_industrialna.jpg");
 }
 </style>
 

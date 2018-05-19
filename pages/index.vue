@@ -4,6 +4,7 @@
       <Intro/>
       <About/>
       <Collab/>
+      <Cennik/>
       <Contact/>
     </div>
   </section>
@@ -13,6 +14,7 @@
 import Intro from '~/components/Intro.vue'
 import About from '~/components/About.vue'
 import Collab from '~/components/Collab.vue'
+import Cennik from '~/components/Cennik.vue'
 import Contact from '~/components/Contact.vue'
 
 export default {
@@ -20,6 +22,7 @@ export default {
     Intro,
     About,
     Collab,
+    Cennik,
     Contact
   }
 }
