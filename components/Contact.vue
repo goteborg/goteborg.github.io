@@ -1,81 +1,21 @@
 <template>
   <div class="section" id="kontakt">
     <h1 class="section__title">Kontakt</h1>
-    <div class="mt-5">
-      <v-flex class="contact-form-wrapper">
-        <form
-          class="form"
-          ref="form"
-          name="contact"
-          data-netlify="true"
-          v-on:submit.prevent="onSubmit"
-        >
-          <input
-            type="text"
-            placeholder="Imię Nazwisko"
-            v-model="name"
-            class="form__input"
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            v-model="email"
-            class="form__input"
-          />
-          <textarea
-            placeholder="Wiadomość"
-            rows="10"
-            v-model="message"
-            class="form__input form__input--textarea"
-          />
-          <button
-            type="submit"
-            class="right"
-            color="primary"
-          >
-            Wyslij
-          </button>
-        </form>
-      </v-flex>
-    </div>
+    <v-layout row wrap class="section__description">
+      <div class="contact">
+        <div class="contact__details">
+          <div class="border-gold-1">
+            <div class="border-gold-2">
+              <span>Napisz, otrzymasz wycenę w 24h</span>
+            </div>
+          </div>
+          <h3>biuro@goteborg-studio.pl</h3>
+          <h4>tel: +48 570686169</h4>
+        </div>
+      </div>
+    </v-layout>
   </div>
 </template>
-
-<script>
-function encode (data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
-
-export default {
-  data () {
-    return {
-      valid: true,
-      name: '',
-      nameRule: (v) => !!v,
-      email: '',
-      emailRule: (v) => !!v,
-      message: ''
-    }
-  },
-  methods: {
-    onSubmit (e) {
-      console.log(this.name, this.email, this.message)
-      this.$axios.post('/', {
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({
-          'form-name': 'contact',
-          name: this.name,
-          email: this.email,
-          message: this.message
-        })
-      })
-      e.preventDefault()
-    }
-  }
-}
-</script>
 
 <style scoped lang="scss">
 @import "./common.scss";
@@ -85,40 +25,42 @@ export default {
   &__title {
     color: $black;
   }
-  // background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232d2638' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
-}
-.contact-form-wrapper {
-  padding: 0 50px;
-  max-width: 700px;
-  margin: 0 auto;
-}
-.form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  color: $black;
-  &__input {
-    display: flex;
-    flex: 1;
-    height: 30px;
-    margin: 0;
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    border-bottom: 1px solid $black;
-    margin-bottom: 30px;
-    outline: none;
-    &--textarea {
-      height: auto;
+  &__description {
+    padding: 48px;
+    @media (max-width: $tablet) {
+      padding: 0 50px;
+    }
+    @media (max-width: $phone) {
+      padding: 48px 10px;
     }
   }
-  button {
-    background-color: $black;
-    color: $white;
-    padding: 12px 15px;
-    width: 200px;
-    margin: 0 auto;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &__details {
+    width: 50%;
+    margin-top: 36px;
+    text-align: center;
+     @media (max-width: $tablet) {
+      width: 90%;
+    }
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+  }
+}
+.border-gold {
+  &-1 {
+    display: inline-block;
+    border: 1px solid goldenrod;
+    padding: 4px;
+  }
+  &-2 {
+    border: 1px solid goldenrod;
+    padding: 24px;
   }
 }
 </style>
