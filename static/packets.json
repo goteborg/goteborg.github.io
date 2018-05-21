@@ -1,11 +1,11 @@
 {
   "light": [
     {
-      "title": "Analiza Potrzeb",
+      "title": "Analiza potrzeb",
       "icon": "SpeechBubbles",
       "subtitles": [
         "Poznajmy się!",
-        "2-3 TODO funkcjonalny"
+        "2-3 rzuty funkcjonalne"
       ]
     },
     {
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "title": "Project",
+      "title": "Projekt",
       "icon": "HousePlans",
       "subtitles": [
         "Wizualizacje 3D",
@@ -28,11 +28,11 @@
   ],
   "bold": [
     {
-      "title": "Analiza Potrzeb",
+      "title": "Analiza potrzeb",
       "icon": "SpeechBubbles",
       "subtitles": [
         "Poznajmy się!",
-        "2-3 TODO funkcjonalny"
+        "2-3 rzuty funkcjonalne"
       ]
     },
     {
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "title": "Project",
+      "title": "Projekt",
       "icon": "HousePlans",
       "subtitles": [
         "Wizualizacje 3D",
@@ -57,7 +57,7 @@
       "icon": "Cherry",
       "subtitles": [
         "Nadzór prac remontowo-budowlanych",
-        "Dopracowanie detali wnętrza i odbiór"
+        "Dopracowanie detali, nadzór autorski nad realizacją do całkowitego zakończenia prac"
       ]
     }
   ]

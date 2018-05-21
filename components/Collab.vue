@@ -1,6 +1,6 @@
 <template>
   <div class="section" id="jak-pracujemy">
-    <h1 class="section__title">Jak Pracujemy</h1>
+    <h1 class="section__title">Jak pracujemy</h1>
     <v-layout row wrap class="section__description">
       <v-flex xs12 md6 mb-4 class="packet packet--light">
         <h2 class="display-1 text-xs-center">Pakiet Light</h2>

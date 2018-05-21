@@ -26,12 +26,12 @@ export default {
       people: [
         {
           name: 'Marta Marcinek',
-          description: 'Niepoprawna marzycielka, która zamienia pomysł w czyn. Absolwentka wzornictwa przemysłowego. Kocha podróże i właśnie z nich czerpie inspiracje do swoich projektów. Zawsze uśmiechnięta i naładowana pozytywną energią. W projektowaniu ceni prostotę formy i oryginalność. Wizjonerka, która kocha nowe technologie. Na każdy problem znajdzie rozwiązanie. Dla niej nie ma rzeczy niemożliwych. Jej nieodzownym towarzyszem jest komputer, myszka i rysownik.',
+          description: 'Niepoprawna marzycielka, która zamienia pomysł w czyn. Absolwentka wzornictwa przemysłowego. Kocha podróże i właśnie z nich czerpie inspiracje do swoich projektów. W projektowaniu ceni prostotę formy i oryginalność. Jej nieodzownym towarzyszem jest komputer, myszka i rysownik.',
           className: 'MartaMarcinek'
         },
         {
           name: 'Agata Patel',
-          description: 'Trzy razy “P”: PUNKTUALNA, PRECYZYJNA, PERFEKCYJNA. Znamy się 10 lat, a jej projekty wciąż mnie zaskakują. Agata, każde marzenie o pięknym i funkcjonalnym domu zamienia w rzeczywistość. Techniczne spojrzenie oraz artystyczna dusza to jej klucz do sukcesu. Jest świetną projektantką, mamą i żoną ;)',
+          description: 'Trzy razy “P”: PUNKTUALNA, PRECYZYJNA, PERFEKCYJNA. Zaskauje oryginalnymi pomysłami, a jej techniczne spojrzenie na projekt w połączeniu z artystyczną duszą to jej klucz do sukcesu. Absolwentka Architektury Wnętrz, która w projektowaniu ceni sobie funkcjonalność i indywidualność.',
           className: 'AgataPatel'
         }
       ]
