@@ -64,7 +64,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat|Poiret+One' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat|Poiret+One' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.css' }
+    ],
+    script: [
+      { src: 'https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js' }
     ]
   },
   /*

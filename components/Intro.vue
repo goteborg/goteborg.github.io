@@ -23,6 +23,7 @@
       <h1>GOTEBORG</h1>
       <h2>STUDIO</h2>
     </div>
+    <div class="logo-overlay"></div>
   </div>
 </template>
 
@@ -221,6 +222,17 @@ export default {
 }
 .third {
   background-image: url("~/assets/kuchnia_industrialna.jpg");
+}
+
+.logo-overlay {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  transition: all 250ms ease;
+  background-image: url("~/assets/gothe_logo.png");
+  background-size: cover;
 }
 </style>
 
