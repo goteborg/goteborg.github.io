@@ -2,8 +2,9 @@
   <section>
     <div>
       <Intro/>
-      <About/>
+      <Projects />
       <Collab/>
+      <About/>
       <Cennik/>
       <Contact/>
     </div>
@@ -12,6 +13,7 @@
 
 <script>
 import Intro from '~/components/Intro.vue'
+import Projects from '~/components/Projects.vue'
 import About from '~/components/About.vue'
 import Collab from '~/components/Collab.vue'
 import Cennik from '~/components/Cennik.vue'
@@ -20,6 +22,7 @@ import Contact from '~/components/Contact.vue'
 export default {
   components: {
     Intro,
+    Projects,
     About,
     Collab,
     Cennik,

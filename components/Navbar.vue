@@ -26,6 +26,11 @@ export default {
           anchor: true
         },
         {
+          link: 'projekty',
+          text: 'Projekty',
+          anchor: true
+        },
+        {
           link: 'jak-pracujemy',
           text: 'Jak działamy',
           anchor: true

@@ -34,12 +34,13 @@ export default {
   &__description {
     padding: 48px;
     @media (max-width: $tablet) {
-      padding: 0 50px;
+      padding: 48px;
     }
     @media (max-width: $phone) {
       padding: 48px 10px;
     }
   }
+
 }
 .packet {
   color: $black;
