@@ -7,6 +7,7 @@
       <About/>
       <Cennik/>
       <Contact/>
+      <PrivacyBar />
     </div>
   </section>
 </template>
@@ -18,6 +19,7 @@ import About from '~/components/About.vue'
 import Collab from '~/components/Collab.vue'
 import Cennik from '~/components/Cennik.vue'
 import Contact from '~/components/Contact.vue'
+import PrivacyBar from '~/components/PrivacyBar.vue'
 
 export default {
   components: {
@@ -26,7 +28,8 @@ export default {
     About,
     Collab,
     Cennik,
-    Contact
+    Contact,
+    PrivacyBar
   }
 }
 </script>
