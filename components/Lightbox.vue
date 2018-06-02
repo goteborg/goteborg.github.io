@@ -88,7 +88,7 @@ export default {
       width: 100%;
     }
     img {
-      max-height: 800px;
+      max-height: 80vh;
       @media (max-width: $tablet) {
         max-height: initial;
         width: 100%;
