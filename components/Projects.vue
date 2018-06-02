@@ -1,5 +1,5 @@
 <template>
-  <div class="section" id="o-nas">
+  <div class="section" id="projekty">
     <h1 class="section__title">Projekty</h1>
     <Lightbox
       :images="images"

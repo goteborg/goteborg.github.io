@@ -21,18 +21,18 @@ export default {
     return {
       nav: [
         {
-          link: 'o-nas',
-          text: 'O nas',
-          anchor: true
-        },
-        {
           link: 'projekty',
           text: 'Projekty',
           anchor: true
         },
         {
           link: 'jak-pracujemy',
-          text: 'Jak działamy',
+          text: 'Jak pracujemy',
+          anchor: true
+        },
+        {
+          link: 'o-nas',
+          text: 'O nas',
           anchor: true
         },
         {
