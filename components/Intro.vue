@@ -68,7 +68,7 @@ export default {
     }
   },
   created: function () {
-    // this.startCarousel()
+    this.startCarousel()
   }
 }
 </script>
