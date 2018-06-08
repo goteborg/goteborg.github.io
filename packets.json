@@ -1,0 +1,65 @@
+{
+  "light": [
+    {
+      "title": "Analiza potrzeb",
+      "icon": "SpeechBubbles",
+      "subtitles": [
+        "Poznajmy się!",
+        "2-3 rzuty funkcjonalne"
+      ]
+    },
+    {
+      "title": "Koncepcja",
+      "icon": "Compass",
+      "subtitles": [
+        "Rozwinięcie wybranego układu fukcjonalnego",
+        "Dobór materiałów"
+      ]
+    },
+    {
+      "title": "Projekt",
+      "icon": "HousePlans",
+      "subtitles": [
+        "Wizualizacje 3D",
+        "Projekt mebli",
+        "Dobór materiałów mebli i akcesoriów do zakupienia"
+      ]
+    }
+  ],
+  "bold": [
+    {
+      "title": "Analiza potrzeb",
+      "icon": "SpeechBubbles",
+      "subtitles": [
+        "Poznajmy się!",
+        "2-3 rzuty funkcjonalne"
+      ]
+    },
+    {
+      "title": "Koncepcja",
+      "icon": "Compass",
+      "subtitles": [
+        "Rozwinięcie wybranego układu fukcjonalnego",
+        "Dobór materiałów"
+      ]
+    },
+    {
+      "title": "Projekt",
+      "icon": "HousePlans",
+      "subtitles": [
+        "Wizualizacje 3D",
+        "Projekt mebli",
+        "Dobór materiałów mebli i akcesoriów do zakupienia"
+      ]
+    },
+    {
+      "title": "Wisienka na torcie",
+      "icon": "Cherry",
+      "subtitles": [
+        "Nadzór prac remontowo-budowlanych",
+        "Dopracowanie detali, nadzór autorski nad realizacją do całkowitego zakończenia prac"
+      ]
+    }
+  ]
+}
+  
